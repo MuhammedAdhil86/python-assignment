@@ -1,0 +1,33 @@
+1.Write a program to create a list of fruits and copy only 'e' letter fruits to the new list
+
+fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig', 'grapefruit']
+e_fruits = []
+
+for fruit in fruits:
+    if 'e' in fruit:
+        e_fruits.append(fruit)
+
+print(f"The original list of fruits is {fruits}.")
+print(f"The list of fruits containing the letter 'e' is {e_fruits}.")
+
+ 
+2.⁠write Pgm to find prime number or not
+   
+
+def prime(num):
+    if num <= 1:
+        return False
+      
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+    return True
+
+num = int(input('Enter a number: '))
+if prime(num):
+    print(num, 'is a prime number')
+
+else:
+    print(num, 'is not a prime number')
+
+
